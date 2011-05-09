@@ -1,4 +1,6 @@
+MANIFEST
 Makefile.PL
+README
 lib/Test/HTTP/Server.pm
 t/11-shutdown.t
 t/10-basic.t
