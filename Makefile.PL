@@ -20,7 +20,7 @@ WriteMakefile(
 	},
 	META_MERGE	=> {
 		resources => {
-			repository => 'https://github.com/sparky/perl-Net-Curl-Simple'
+			repository => 'https://github.com/sparky/perl-Test-HTTP-Server'
 		},
 	},
 	DIR			=> [], # no other Makefile.PL
