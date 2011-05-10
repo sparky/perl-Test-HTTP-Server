@@ -265,7 +265,7 @@ sub out_all
 	$req =~ s#^/##;
 	my @args = map { uri_unescape $_ } split m#/#, $req;
 	my $func = shift @args;
-	$func = "index" unless length $func;
+	$func = "index" unless defined $func and length $func;
 
 	my $body;
 	eval {
