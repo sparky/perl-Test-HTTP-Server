@@ -9,7 +9,7 @@ use warnings;
 use IO::Socket;
 use POSIX ":sys_wait_h";
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub _open_socket
 {
