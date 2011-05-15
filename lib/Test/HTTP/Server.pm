@@ -140,10 +140,8 @@ BEGIN {
 	}
 }
 
-use constant {
-	DNAME => [qw(Sun Mon Tue Wed Thu Fri Sat)],
-	MNAME => [qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)],
-};
+use constant DNAME => [qw(Sun Mon Tue Wed Thu Fri Sat)];
+use constant MNAME => [qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)];
 
 sub _http_time
 {
