@@ -278,7 +278,9 @@ sub out_all
 	);
 	$self->{out_headers} = { %default_headers };
 
-	my $req = $self->{request}->[1];
+	my $raw_uri = $self->{request}->[1];
+	my @req_parts = split m#\?#, $raw_uri;
+	my $req = shift @req_parts;
 	$req =~ s#^/##;
 	my @args = map { uri_unescape $_ } split m#/#, $req;
 	my $func = shift @args;
