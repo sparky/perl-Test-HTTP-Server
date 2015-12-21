@@ -1,1 +1,4 @@
-This is a simple http server I am using for testing web clients.
+This is a simple http server intended for testing web clients.
+
+The module uses forking and signals. It therefore is not compatible with Windows. 
+
